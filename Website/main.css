@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-primary: #272174;
+    --color-primary: rgb(12,82,161);
     --color-secondary: #27AE60;
     --color-white: #FFFFFF;
     --color-black: #000;
@@ -54,33 +54,52 @@ section {
 .section {
     transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
-    background-color: var(--color-white);
+    background-color: var( --color-primary);
 }
 
 .section1 {
     display: none;
     transform: translateY(0) scale(1);
+
 }
 
 .section2 {
     display: none;
     transform: translateY(0) scale(1);
+
 }
 
 .section3 {
     display: none;
     transform: translateY(0) scale(1);
+
 }
 
 .section4 {
     display: none;
     transform: translateY(0) scale(1);
+
 }
 
 .section5 {
     display: none;
     transform: translateY(0) scale(1);
+
 }
+
+.active{
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+    }
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0);
+        }
+        100%{
+            transform: translateY(0) scaleY(1);
+        }
+}
+
 
 .buttons {
     position: fixed;
@@ -93,6 +112,11 @@ section {
     justify-content: center;
     transform: translateY(-50%);
 }
+.active-btn {
+    background-color: var(--color-secondary) !important;
+    transition: all .3s ease-in-out;
+}
+
 .button{
     padding: 1rem;
     cursor: pointer;
@@ -110,3 +134,32 @@ i{
     font-size: 1.3rem;
     pointer-events: none;
 }
+
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+.left-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-shape {
+    transition: all .4s ease-in-out;
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+    
+}
+.image {
+    border-radius: var(--br-sm-2);
+    height: 90%;
+    width: 68%;
+}
+//55.28

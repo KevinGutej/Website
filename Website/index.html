@@ -18,19 +18,42 @@
 </head>
 
 <body class="main">
-    <header class="section section1 header active">
-        <i class="fas fa-store-alt"></i>
+    <header class="section section1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="header-shape"></div>
+                <div class="image">
+                    <!-- <img src="image/programming.avif" alt=""> -->
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Welcome, I'm <span>Kevin.</span>
+                    A Web and C++ Developer.
+                </h1>
+                <p>
+                    I'm a Front Web Developer and program in many other programming languages, such as Python, C++, PHP.
+                    I always have many ideas on what to add to a website and enjoy writing my code.
+                    I have created many programs such as a libraryMangement, Calculators in most programming languages,
+                    CeaserCipherEncryptor ...
+                </p>
+                <a href="" class="main-button">
+                    <span class="button-text">Check Out my CV</span>
+                    <span class="button-icon"><i class="fas fa-download"></i></span>
+                </a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section class="section section2 about"></section>
-        <section class="section section3 portfolio"></section>
-        <section class="section section4 journey"></section>
-        <section class="section section5 contact"></section>
+        <section class="section section2 about" id="about"></section>
+        <section class="section section3 portfolio" id="portfolio"></section>
+        <section class="section section4 journey" id="journey"></section>
+        <section class="section section5 contact" id="contact"></section>
     </main>
 
     <div class="buttons">
-        <div class="button button-1 active-btn">
+        <div class="button button-1 active-btn" data-id="home">
             <i class="fas fa-home"></i>
         </div>
         <div class="button button-2" data-id="about">
@@ -42,10 +65,12 @@
         <div class="button button-4" data-id="journey">
             <i class="fas fa-route"></i>
         </div>
-        <div class="button button-5"  data-id="contact">
+        <div class="button button-5" data-id="contact">
             <i class="fas fa-phone"></i>
         </div>
     </div>
+
+    <script src="application.js"></script>
 </body>
 
 </html>
