@@ -326,3 +326,9 @@ h2 span {
 .react{ width: 60%; }
 .node{ width: 87%; }
 .python{ width: 70%; }
+
+.my-portfolio-title {
+
+    top: 50%;
+    left: 25%;
+}
