@@ -7,7 +7,7 @@
 
 :root {
     --color-primary: rgb(12,82,161);
-    --color-secondary: #27AE60;
+    --color-secondary: #12141b;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -367,11 +367,15 @@ image {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    opacity: 0;
+    transform: scale(0);
+    transition: all .4s ease-in-out;
 }
 .project-source {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--color-grey-1);
     margin-bottom: 1.5rem;
+
 }
 .icons {
     display: flex;
@@ -389,4 +393,10 @@ image {
     margin: 0 1rem;
     cursor: pointer;
     transition: all .4s ease-in-out;
+
 }
+.portfolio-item:hover .hover-item{
+    opacity: 1;
+    transform: scale(1);
+}
+
