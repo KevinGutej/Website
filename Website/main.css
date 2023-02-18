@@ -307,7 +307,7 @@ h2 span {
 .progress {
     width: 100%;
     height: .45rem;
-    background-color: var(--color-grey-4);
+    background-color: rgb(101, 100, 100);
     margin-left: 1rem;
     position: relative;
 }
@@ -316,7 +316,7 @@ h2 span {
     top: 0;
     left: 0;
     height: 100%;
-    background-color: var(--color-secondary);
+    background-color: green;
     transition: all .4s ease-in-out;
     width: 60%;
 }
@@ -404,13 +404,8 @@ image {
     content: "";
     position: absolute;
     width: 5px;
-    background: linear-gradient(
-      to bottom,
-      rgba(80, 80, 80, 0) 0%,
-      rgb(80, 80, 80) 8%,
-      rgb(80, 80, 80) 92%,
-      rgba(80, 80, 80, 0) 100%
-    );
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(209,209,215,1) 100%);
     top: 0;
     bottom: 0;
     left: 50.3%;
@@ -435,7 +430,7 @@ image {
     z-index: 1;
     box-shadow: 0 0 0 4px white, inset 0 2px 0 rgb(0 0 0 / 8%),
       0 3px 0 4px rgb(0 0 0 / 5%);
-    background:  rgb(80, 80, 80) 92%;
+    background: black;
   }
   
   .left {
@@ -451,16 +446,20 @@ image {
   }
   
   .content {
-    padding: 15px 15px 15px 17px;
+    padding: 15px 15px 15px 15px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+    box-shadow: black;
+    
+    
   }
   
   .content h3 {
-    font-size: 14px;
-    color: #404040;
+    font-size: 17px;
+    color: rgb(13, 12, 12);
     letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    
   }
   
   .content p {
@@ -468,3 +467,37 @@ image {
     margin-top: 2px;
     font-style: italic;
   }
+
+  .search-bar {
+    width: 25%;
+    max-width: 700px;
+    background: var(--color-secondary);
+    display: flex;
+    border-radius: 60px;
+    padding: 10px 20px ;
+    transform: translate(1400px, 1px);
+  }
+  .search-input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    /* padding: 24px 20px; */
+    font-size: 20px;
+  }
+  ::placeholder {
+    color: white;
+  }
+
+  .search-btn {
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary);
+    cursor: pointer;
+  }
+  .fa-search{
+    color: white;
+  }
+  
