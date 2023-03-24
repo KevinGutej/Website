@@ -363,24 +363,51 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control">
-                                <input type="text" placeholder="name" required>
-                                <input type="email" placeholder="email" required>
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="subject">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8"></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="#" class="main-button">
-                                    <span class="button-text">Send</span>
-                                    <span class="button-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
-                        </form>
+                        <h1>Contact form</h1>
+      <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+         <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Your name <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                    Your email address <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <textarea name="message" class="long field-textarea"></textarea>
+                  <span class="error" id="errormsg"></span>
+               </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <input type="submit" value="Send">      
+                  <input type="reset" value="Reset"> 
+               </td>
+            </tr>
+         </table>
+      </form>
                     </div>
                 </div>
             </div>
