@@ -557,10 +557,10 @@ button-icon:hover {
     border-radius: 50%;
     background-color: var(--color-grey-4);
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
-    transition: all 0.1s ease-in-out;
+
   }

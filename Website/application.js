@@ -4,6 +4,22 @@ const sectButton = document.querySelectorAll('.button');
 const allSections = document.querySelector('.main');
 
 
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi bi-brightness-high-fill')) {
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '2s';
+    }else {
+        body.style.background = 'black';
+        body.style.color = 'white';
+        body.style.transition = '2s';
+    }
+})
+
 function PageTransition() { //Button Active
     for(let i = 0; i < sectButton.length; i++) {
         sectButton[i].addEventListener('click', function() {
@@ -30,6 +46,5 @@ function PageTransition() { //Button Active
         }
     }) 
 }
-
 PageTransition();
 
