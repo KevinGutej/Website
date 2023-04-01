@@ -13,20 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <title>Document</title>
 </head>
 
 <body class="main">
 
-    <div class="search-container">
-        <form action="https://www.google.com/search" method="get" class="search-bar">
-            <input class="search-input" type="text" name="q" placeholder="Search">
-            <button class="search-btn" type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-    </div>
+
 
     <header class="section section1 header active" id="home">
         <div class="header-content">
@@ -77,8 +71,8 @@
                         experience in a business
                         and learn how to work as a team on a project.
                     </p>
-                    <h4>My Skills and Proggraming Laungages</h4>
-                    <p>To this day I have experience with operating Linux, mySQL, Apache2, XLM, LESS and jQuery. Also
+                    <h4 class = "right h4">My Skills and Proggraming Laungages</h4>
+                    <p class = "right-p">To this day I have experience with operating Linux, mySQL, Apache2, XLM, LESS and jQuery. Also
                         since I started my programming journey I have learnt C++, Python, Lua, HTML CSS, Javascript and
                         PHP. I'm most confident with writing in C++ as that the laungage I have most experience with and
                         also I enjoy it the most. On the other hand I also have alot of experience with HTML and CSS as
@@ -146,8 +140,8 @@
             </div>
         </section>
         <section class="section section3 portfolio" id="portfolio">
-            <div class="maintitle">
-                <h2 class="my-portfolio-title">My Portfolio</h2>
+            <div class="main-title">
+                <h2> <span>My Portfolio</span> <span class = "bg-text">My Work</span></h2>
             </div>
             <p class="portfolio-text">
                 Here is some of my work that I have done in different programming laungages.
@@ -158,7 +152,7 @@
                         <img src="image/port2.jpg" alt="">
                     </div>
                     <div class="hover-item">
-                        <h3 class="project-source">Project Sources</h3>
+                        <h3>Project Sources</h3>
                         <div class="icons">
                             <a href="#" class="icon">
                                 <i class="fab fa-github"></i>
@@ -434,7 +428,10 @@
             </div>
         </div>
     </div>
-
+    <div class="themeToggle">
+        <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+    </div>
+    
     <script src="application.js"></script>
 </body>
 

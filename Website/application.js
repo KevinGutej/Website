@@ -31,6 +31,5 @@ function PageTransition() { //Button Active
     }) 
 }
 
-
 PageTransition();
 
